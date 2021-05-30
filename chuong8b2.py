@@ -23,20 +23,16 @@ def giai_pt_bac_hai(a, b, c):
 try:
    #Nhap bac cua phuong trinh
    Bac = input('Nhap bậc của phương trình: ')
-  
    #TH 1: Giai phuong trinh bac nhat
    if Bac == '1':
-       #Doc dong du lieu thu hai
-       #Ep kieu du lieu sang so thuc
-      a, b = map(float, input('Nhập hệ số: ').split())
+      a, b = map(float, input('Nhập hệ số a, b: ').split())
        #Goi ham giai phuong trinh bac nhat
       print(giai_pt_bac_nhat(a, b))
    #TH 2: Giai phuong trinh bac hai
    elif Bac == '2':
-       a, b, c = map(float, input('Nhập hệ số: ').split())
+       a, b, c = map(float, input('Nhập hệ số a, b, c: ').split())
        print(giai_pt_bac_hai(a, b, c))
    else:
        print("Vui lòng chọn lại bậc là 1 hoặc 2")
 except:
    print("Số liệu nhập vào không hợp lệ!")
-
