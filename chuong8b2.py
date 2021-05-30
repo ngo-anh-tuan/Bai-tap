@@ -28,7 +28,7 @@ try:
       a, b = map(float, input('Nhập hệ số a, b: ').split())
        #Goi ham giai phuong trinh bac nhat
       print(giai_pt_bac_nhat(a, b))
-   #TH 2: Giai phuong trinh bac hai
+   #TH 2: Giai phuong trinh bac hai 
    elif Bac == '2':
        a, b, c = map(float, input('Nhập hệ số a, b, c: ').split())
        print(giai_pt_bac_hai(a, b, c))
